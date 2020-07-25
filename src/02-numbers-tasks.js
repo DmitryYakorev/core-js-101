@@ -20,7 +20,8 @@
  *   5, 5  => 25
  */
 function getRectangleArea(width, height) {
-  return width * height;
+  const res = width * height;
+  return res;
 }
 
 
@@ -36,8 +37,8 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCicleCircumference(radius) {
-  const square = 2 * Math.PI * radius;
-  return square;
+  const res = 2 * Math.PI * radius;
+  return res;
 }
 
 /**
@@ -55,7 +56,8 @@ function getCicleCircumference(radius) {
 function getAverage(value1, value2) {
   // console.log(value1, value2);
 
-  return (value1 / 2) + (value2 / 2);
+  const res = (value1 / 2) + (value2 / 2);
+  return res;
 }
 
 /**
@@ -74,8 +76,8 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-  const dist = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
-  return dist;
+  const res = Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+  return res;
 }
 
 /**
@@ -91,7 +93,8 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   5*x = 0         => 0
  */
 function getLinearEquationRoot(a, b) {
-  return -(b / a);
+  const res = -(b / a);
+  return res;
 }
 
 
@@ -114,7 +117,9 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (1,2)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
-  return Math.acos((x1 * x2 + y1 * y2) / (Math.sqrt((x1 ** 2 + y1 ** 2) * (x2 ** 2 + y2 ** 2))));
+  const res = Math.acos((x1 * x2 + y1 * y2) / (Math.sqrt((x1 ** 2 + y1 ** 2)
+  * (x2 ** 2 + y2 ** 2))));
+  return res;
 }
 
 /**
@@ -130,7 +135,8 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
  *     0     => 0
  */
 function getLastDigit(value) {
-  return String(value).slice(-1);
+  const res = String(value).slice(-1);
+  return res;
 }
 
 
@@ -146,7 +152,8 @@ function getLastDigit(value) {
  * '-525.5'     => -525.5
  */
 function parseNumberFromString(value) {
-  return +value;
+  const res = +value;
+  return res;
 }
 
 /**
@@ -163,7 +170,8 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelipidedDiagonal(a, b, c) {
-  return Math.sqrt(a ** 2 + b ** 2 + c ** 2);
+  const res = Math.sqrt(a ** 2 + b ** 2 + c ** 2);
+  return res;
 }
 
 /**
@@ -184,7 +192,8 @@ function getParallelipidedDiagonal(a, b, c) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(num, pow) {
-  return (Math.round(num / (10 ** pow))) * (10 ** pow);
+  const res = (Math.round(num / (10 ** pow))) * (10 ** pow);
+  return res;
 }
 
 /**
@@ -230,7 +239,8 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-  return (+value) || def;
+  const res = (+value) || def;
+  return res;
 }
 
 module.exports = {
